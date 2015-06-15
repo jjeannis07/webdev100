@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Helping Hand</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="mystyle.css" type="text/css" />
+        <link href="bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <!-- content -->
+<div class="content">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="logo/WebDev100-logo.png" alt=""/></a>
+            </div>
+            <div class="navigation">
+                <span class="menu"></span>
+                        <ul class="nav1">
+                            <li><a class="active" href="index.html">HOME</a></li>
+                            <li><a href="donate.html">Act Now</a></li> 
+                            <li><a href="contact.html">Contact</a></li>  
+                            <li><a href="">About Us</a></li>                         
+                        </ul>                                
+            </div>
+            <div class="search">
+                  <form>
+                    <input type="search" value="SEARCH" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'SEARCH';}" required="">
+                    <input type="submit" value="Go">
+                 </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="content-top">
+            <div class="col-md-5 con-btm-left">                
+                    <div class="reg-header">
+                        <p><big><b>Let's Make a Difference</b></big><br />
+                                        Giving little doesn't mean stingy:</p>                                             
+                    </div>
+                    <div class="donate-grids">
+                            <div class="donate-right">
+                            <div class="user-form">
+                                 <FORM action="" method="post">
+                                    <h3>First Name</h3>
+                                        <input type="text" value="first name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'first name';}" required="">
+                                        <h3>Last Name</h3>
+                                        <input type="text" value="last name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'first name';}" required="">
+                                        <h3>Email</h3>
+                                        <input type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}" required="">
+                                        <h3>Confirm Email</h3>
+                                        <input type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}" required="">
+                                        <h3>Phone Number</h3>
+                                        (<input type=tel size=3>) <input type=tel size=3>-<input type=tel size=4>
+                                    <div id="radio_button">
+                                        <input type="radio" name="radiobutton" value="Female">
+                                        <label >Female</label>                                        
+                                        <input type="radio" name="radiobutton" value="Male">
+                                        <label >Male</label>
+                                    </div>
+                                    <div class="wrap-donate">                                                     
+                                      <input type="hidden" name="cmd" value="_xclick">                                      
+                                      <h3>Donation / Contribution? </h3><br />
+                                      <select name="item_name">
+                                      <option value="Donation">Donation</option>
+                                      <option value="Contribution">Contribution</option>
+                                      </select> 
+                                      <h3>Which causes you want to support?</h3><br />   
+                                      <select name="item_number">
+                                      <option value="Carcinoma">Carcinoma</option>
+                                      <option value="Sarcoma">Sarcoma</option>
+                                      <option value="Lymphoma ">Lymphoma</option>
+                                      </select> 
+                                      <h3>How much do you want to donate?</h3><br />
+                                      $ <input type="text" name="amount"> 
+                                      <input type="hidden" name="no_shipping" value="0">
+                                     </div>
+                                 <div>
+                                  <p id="sign_user" onClick="Submit()">Proceed</p>
+                                 </div>
+                               </form>
+                            </div>
+                        </div>                                                                  
+                        </div>
+                        </div>
+        <div class="clearfix"></div>
+        </div> 
+        </div>       
+        <div class="footer">
+            <p>Copyright &copy; 2015 James Jeannis WebDev100</a></p>
+        </div>        
+    </body>
+</html>

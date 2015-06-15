@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Helping Hand</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="mystyle.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="responsiveslides.css">
+        <link href="bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/responsiveslides.js"></script>
+    </head>
+    <body>
+    <!-- content -->
+     <div class="content">
+         <div class="container">
+          <div class="header">
+                  <div class="logo">
+                     <a href="index.html"><img src="logo/WebDev100-logo.png" alt=""/></a>
+                  </div>
+             <div class="navigation">
+                  <span class="menu"></span>
+                        <ul class="nav1">
+                            <li><a class="active" href="index.html">HOME</a></li>
+                            <li><a href="donate.html">Act Now</a></li> 
+                            <li><a href="contact.html">Contact</a></li>  
+                            <li><a href="">About Us</a></li>
+                        </ul>                                
+             </div>
+              <div class="search">
+                <form>
+                    <input type="search" value="SEARCH" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'SEARCH';}" required="">
+                    <input type="submit" value="Go">
+                </form>
+              </div>
+            <div class="clearfix"></div>
+          </div><!--Navigation header-->
+    <div class="content-top">
+         <div class="wrap">
+                <div class="col-md-5 content-left">
+                    <h1>LIVESTRONG</h1>
+                    <div class="border"></div>
+                    <p>Donation is one of the best ways we can support each other. In America, our society is being affected 
+                    by different type of cancers every day. As a united nation, I ask everyone to play their part by donating to
+                    provide support to our brothers and sisters.</p>
+                    <a href="donate.html" class="hvr-rectangle-out button">Please Join Us</a>
+                    <a href="contact.html"class="hvr-rectangle-in button more-mar">Contact Us</a>
+                 </div>
+            <div class="col-md-7 content-right">
+                    <!-- responsiveslides -->
+                        <script src="js/responsiveslides.min.js"></script>
+                            <script>
+                                // You can also use "$(window).load(function() {"
+                                $(function () {
+                                 // Slideshow 4
+                                $("#slider3").responsiveSlides({
+                                    auto: true,
+                                    pager: true,
+                                    nav: false,
+                                    speed: 500,
+                                    namespace: "callbacks",
+                                    before: function () {
+                                $('.events').append("<li>before event fired.</li>");
+                                },
+                                after: function () {
+                                    $('.events').append("<li>after event fired.</li>");
+                                    }
+                                    });
+                                    });
+                            </script>
+                    <!-- responsiveslides -->
+                <div  id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider3">
+                        <li>
+                          <div class="slider-image">
+                                <img src="images/help1.jpg"/>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slider-image">
+                                <img src="images/help2.jpg"/>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slider-image">
+                                <img src="images/help3.jpg"/>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slider-image">
+                                <img src="images/help4.jpg"/>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slider-image">
+                                <img src="images/help5.jpg"/>
+                          </div>
+                        </li>
+                    </ul>
+                </div>                
+              <div class="clearfix"></div> 
+         </div>             
+        <div class="clearfix"></div>  
+        </div><!--content-Top-->
+        </div>
+        </div>                                   
+         <div class="footer">
+            <p>Copyright &copy; 2015 James Jeannis WebDev100</a></p>
+        </div>
+  </body>
+</html>
