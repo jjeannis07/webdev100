@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="mystyle.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="responsiveslides.css">
         <link href="bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/responsiveslides.js"></script>
     </head>
@@ -49,25 +49,23 @@
             <div class="col-md-7 content-right">
                     <!-- responsiveslides -->
                         <script src="js/responsiveslides.min.js"></script>
-                            <script>
-                                // You can also use "$(window).load(function() {"
-                                $(function () {
-                                 // Slideshow 4
+                            <script> 
+                                $(function () {                               
                                 $("#slider3").responsiveSlides({
-                                    auto: true,
-                                    pager: true,
-                                    nav: false,
-                                    speed: 500,
-                                    namespace: "callbacks",
-                                    before: function () {
+                                 auto: true,
+                                 pager: false,
+                                 nav: true,
+                                 speed: 600,
+                                 namespace: "callbacks",
+                                 before: function () {
                                 $('.events').append("<li>before event fired.</li>");
-                                },
-                                after: function () {
-                                    $('.events').append("<li>after event fired.</li>");
-                                    }
-                                    });
-                                    });
-                            </script>
+                                  },
+                                 after: function () {
+                                $('.events').append("<li>after event fired.</li>");
+                                  }
+                                 });
+                                 });
+                         </script>
                     <!-- responsiveslides -->
                 <div  id="top" class="callbacks_container">
                     <ul class="rslides" id="slider3">
